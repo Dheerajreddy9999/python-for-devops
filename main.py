@@ -12,8 +12,17 @@ def mul(num1,num2):
     m = num1 * num2
     return m
 
-num1 = sys.argv[0]
-num2 = sys.argv[1]
+num1 = int(sys.argv[1])
+operation = sys.argv[2]
+num2 = int(sys.argv[3])
 
-x=add(num1,num2)
-print(x)
+
+if operation == "add":
+    print(add(num1,num2))
+elif operation == "sub":
+    print(sub(num1,num2))
+elif operation == "mul":
+    print(mul(num1,num2))
+else:
+    print("error")
+
